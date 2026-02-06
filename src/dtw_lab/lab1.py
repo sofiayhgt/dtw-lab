@@ -116,27 +116,12 @@ def calculate_statistic(
 ) -> Union[float, pd.Series]:
     """
     Calculate the specified statistical measure for a given pandas DataFrame column.
-
-    Args:
-        measure (Literal["mean", "median", "mode"]): The statistical measure to calculate.
-        column (pd.Series): The pandas DataFrame column to perform the calculation on.
-
-    Returns:
-        float: The calculated statistic.
-
-    Raises:
-        ValueError: If an invalid measure is provided.
     """
     if measure == "mean":
         return column.mean()
     elif measure == "median":
         return column.median()
     elif measure == "mode":
-        column.mode()[0]
-    
+        return column.mode()[0]
     else:
         raise ValueError("Invalid measure. Choose 'mean', 'median', or 'mode'.")
-
-
-
-
