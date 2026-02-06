@@ -1,4 +1,4 @@
-# DTW-Lab: Modelo de Análisis de Datos [Nombre del Proyecto]
+# DTW-Lab:
 
 ## 1. Descripción del Proyecto
 Este proyecto forma parte del workshop de Git y GitHub. Consiste en un modelo de desarrollado para practicar el flujo de trabajo colaborativo (GitHub Flow).
