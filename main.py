@@ -7,4 +7,4 @@ if __name__=='__main__':
     df = clean_data(df)
     visualize_data(df)
 
-    print(f'The mean value for the charge left percentage is {calculate_statistic('mean',df['Charge_Left_Percentage'])}')    
+    print(f'The mean value for the charge left PERCENTAGE is {calculate_statistic('mean',df['Charge_Left_Percentage'])}')
