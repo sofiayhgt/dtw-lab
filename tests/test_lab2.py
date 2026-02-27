@@ -1,6 +1,6 @@
 import pandas as pd
-from dtw_lab.lab1 import calculate_statistic
-import dtw_lab.lab2 as lab2
+from src.dtw_lab.lab1 import calculate_statistic
+import src.dtw_lab.lab2 as lab2
 from src.dtw_lab.lab1 import encode_categorical_vars
 
 def test_calculate_statistic():
