@@ -52,10 +52,10 @@ def test_get_statistic_mocks_external_dependency(mocker):
     fake_df = pd.DataFrame({"Charge_Left_Percentage": [10, 20, 30]})
 
     # Mock de la descarga (evita llamada a red)
-    mocker.patch("dtw_lab.lab2.read_csv_from_google_drive", return_value=fake_df)
+    mocker.patch("src.dtw_lab.lab2.read_csv_from_google_drive", return_value=fake_df)
 
     # Evita que clean_data cambie el DF en este test (opcional)
-    mocker.patch("dtw_lab.lab2.clean_data", side_effect=lambda df: df)
+    mocker.patch("src.dtw_lab.lab2.clean_data", side_effect=lambda df: df)
 
     result = lab2.get_statistic("mean", "Charge_Left_Percentage")
     assert result["value"] == 20.0
